@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="logo">
+          <a href="../index.html">Indoor Plants</a>
+          <!--<img class="img-logo" src="images/main_logo.jpg" alt="Logo of leaf">-->
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+          
+            <li><a href="#">Services</a></li>
+            <li><a href="signup.html">Contact</a></li>
+            <li><a href="#action-main-button">Sign Up</a></li>
+          </ul>
+        </nav>
+        
+      </header>
+     <main class="sign-up-form">
+        <h1 class="signupform_heading">User-Registration</h1>
+        <form action="https://formspree.io/f/meqypkwo" method="POST">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="Name">User Name*</label>
+                <input type="textbox" id="username" required><br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" min="1950-01-01" max="2005-01-01"> <br>
+                <label for="email" >Email*</label>
+                <input type="email" name="email"required><br>
+                <label for="phone">Contact Number</label>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX"><br> 
+                <label for="address">Address</label>
+                <textarea name="address" rows="5" cols="20"></textarea> 
+                
+                <label>Select a convenient time slot</label>
+                <input type="time" min="09:00" max="16:00" step="1800"><small>Office hours are 8am to 4pm.Choose an appointment for 30 minutes</small><br>
+                <label for="address">Remarks</label>
+                <textarea name="message" rows="5" cols="20"></textarea> 
+                <br><input type="reset" value="Reset" class="website-section-button">&nbsp;
+                <input type="submit" name="Register" class="website-section-button">
+            </fieldset>
+            </form>
+     </main>
+     <footer class="action-main">
+  
+        <div class="action-main-text">Send us an email at ravdeep00@gmail.com OR Sign up for further information and questions. We are just a click away.</div>
+        <div id="action-main-button"><button class="website-section-button">Sign Up</button>  </div>
+      
+      </footer>   
+        </div>   
+      </body>
+      </html>
+</body>
+</html>
